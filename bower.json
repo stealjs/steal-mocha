@@ -1,0 +1,16 @@
+{
+  "name": "steal-mocha",
+  "version": "0.0.1",
+  "devDependencies": {},
+  "ignore": [
+    "**/.*",
+    "package.json",
+    "bower.json",
+    "Gruntfile.js",
+    "node_modules",
+    "test"
+  ],
+  "dependencies": {
+    "mocha": "~2.2.1"
+  }
+}
