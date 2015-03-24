@@ -19,3 +19,21 @@ mocha.setup("bdd");
 ```
 
 and your tests will automatically be ran.
+
+## Writing tests
+
+When you write tests just be sure to import `steal-mocha`.
+
+```js
+import "steal-mocha";
+
+describe("Foo", function(){
+  it("bar", function(){
+    assert("yay!");
+  });
+});
+```
+
+## License
+
+MIT
