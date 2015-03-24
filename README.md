@@ -15,7 +15,7 @@ Add the Steal tag to your page
 This will do the equivalent of
 
 ```js
-mocha.run("bdd");
+mocha.setup("bdd");
 ```
 
 and your tests will automatically be ran.
