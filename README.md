@@ -34,6 +34,20 @@ describe("Foo", function(){
 });
 ```
 
+## Use with Bower / manually
+
+If you are not using NPM the following configuration is necessary:
+
+```js
+System.config({
+  paths: {
+    "steal-mocha": "path/to/steal-mocha/steal-mocha.js",
+    "mocha": "path/to/mocha/mocha.js",
+    "mocha/mocha.css": "path/to/mocha/mocha.css"
+  }
+});
+```
+
 ## License
 
 MIT
