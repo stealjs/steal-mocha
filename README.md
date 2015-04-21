@@ -34,18 +34,16 @@ describe("Foo", function(){
 });
 ```
 
-## Use with Bower
+## Use with Bower / manually
 
-If you are not using NPM (e.g. Bower or custom downloads) the folowing configuration is necessary:
+If you are not using NPM the following configuration is necessary:
 
 ```js
 System.config({
-  map: {
-    "mocha/mocha.css": "bower_components/mocha/mocha.css"
-  },
   paths: {
-    "steal-mocha": "bower_components/steal-mocha/steal-mocha.js",
-    mocha: "bower_components/mocha/mocha.js"
+    "steal-mocha": "path/to/steal-mocha/steal-mocha.js",
+    "mocha": "path/to/mocha/mocha.js",
+    "mocha/mocha.css": "path/to/mocha/mocha.css"
   }
 });
 ```
