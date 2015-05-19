@@ -40,10 +40,20 @@ If you are not using NPM the following configuration is necessary:
 
 ```js
 System.config({
-  paths: {
-    "steal-mocha": "path/to/steal-mocha/steal-mocha.js",
-    "mocha": "path/to/mocha/mocha.js",
-    "mocha/mocha.css": "path/to/mocha/mocha.css"
+  "paths": {
+      "steal-mocha": "path/to/steal-mocha/steal-mocha.js",
+      "steal-mocha/*": "path/to/steal-mocha/*.js",
+      "mocha": "path/to/mocha/mocha.js",
+      "mocha/mocha.css": "path/to/mocha/mocha.css"
+  },
+  "meta": {
+      "mocha": {
+          "format": "global",
+          "exports": "mocha",
+          "deps": [
+              "steal-mocha/add-dom"
+          ]
+      }
   }
 });
 ```
