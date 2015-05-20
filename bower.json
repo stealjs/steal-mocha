@@ -1,6 +1,7 @@
 {
   "name": "steal-mocha",
   "version": "0.0.1",
+  "main": "steal-mocha.js",
   "devDependencies": {},
   "ignore": [
     "**/.*",
@@ -12,5 +13,20 @@
   ],
   "dependencies": {
     "mocha": "~2.2.1"
+  },
+  "system": {
+    "paths": {
+        "mocha": "bower_components/mocha/mocha.js",
+        "mocha/mocha.css": "bower_components/mocha/mocha.css"
+    },
+    "meta": {
+        "mocha": {
+            "format": "global",
+            "exports": "mocha",
+            "deps": [
+                "steal-mocha/add-dom"
+            ]
+        }
+    }
   }
 }
