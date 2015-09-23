@@ -16,17 +16,17 @@
   },
   "system": {
     "paths": {
-        "mocha": "bower_components/mocha/mocha.js",
-        "mocha/mocha.css": "bower_components/mocha/mocha.css"
+      "mocha/mocha": "bower_components/mocha/mocha.js",
+      "mocha/mocha.css": "bower_components/mocha/mocha.css"
     },
     "meta": {
-        "mocha": {
-            "format": "global",
-            "exports": "mocha",
-            "deps": [
-                "steal-mocha/add-dom"
-            ]
-        }
+      "mocha/mocha": {
+        "format": "global",
+        "exports": "mocha",
+        "deps": [
+          "steal-mocha/add-dom"
+        ]
+      }
     }
   }
 }
