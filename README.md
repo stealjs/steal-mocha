@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/stealjs/steal-mocha.svg?branch=master)](https://travis-ci.org/stealjs/steal-mocha)
+[![npm version](https://badge.fury.io/js/steal-mocha.svg)](http://badge.fury.io/js/steal-mocha)
+
 # steal-mocha
 
 Provides an easy way to automatically run Mocha tests using [StealJS](http://stealjs.com).
