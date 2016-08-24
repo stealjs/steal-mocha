@@ -61,6 +61,34 @@ System.config({
 });
 ```
 
+## mocha.opts
+
+Mocha's runner allows for a [mocha.opts](https://mochajs.org/#mochaopts) file,
+specifying addition options such as `checkLeaks()`. `steal-mocha` does not parsed
+a `mocha.opts` file, however allows the specification of a startup script.
+
+This is similar to the `--require` option in `mocha.opts`.
+
+```html
+<script src="node_modules/steal/steal.js"
+  data-mocha-require="test/setup"
+  data-main="test/test"></script>
+```
+
+_The path in `data-mocha-require` is a module name._
+
+__test/setup.js__
+```js
+const chai = require('chai');
+const sinon = require('sinon');
+
+module.exports = function(mocha) {
+  sinon.assert.expose(chai.assert, { prefix: '' });
+};
+```
+
+_The above example extends Chai's assertion library with SinonJS assertions._
+
 ## License
 
 MIT

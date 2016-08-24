@@ -1,14 +1,30 @@
 "format amd";
-define(["mocha/mocha", "mocha/mocha.css!"], function(mocha){
+define(["mocha/mocha", "@loader", "mocha/mocha.css!"], function(mocha, System){
 	if(System.mocha) {
 		var opts = System.mocha;
 		mocha.setup(opts);
+	}
+
+	var getOpts;
+
+
+	if(System.mochaRequire) {
+		getOpts = System.import(System.mochaRequire).then(function(mochaConfig) {
+			return mochaConfig.default || mochaConfig;
+		});
+	}
+	else {
+		getOpts = Promise.resolve(function() {});
 	}
 
 	steal.done().then(function() {
 		if (window.Testee) {
 			Testee.init();
 		}
+
+		return getOpts;
+	}).then(function(mochaConfig) {
+		mochaConfig(mocha);
 		mocha.run();
 	});
 
