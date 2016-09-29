@@ -18,8 +18,8 @@ define(["mocha/mocha", "@loader", "mocha/mocha.css!"], function(mocha, System){
 	}
 
 	steal.done().then(function() {
-		if (window.Testee) {
-			Testee.init();
+		if (window.Testee && window.Testee.init) {
+			window.Testee.init();
 		}
 
 		return getOpts;
