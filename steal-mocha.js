@@ -1,15 +1,21 @@
 "format amd";
-define(["mocha/mocha", "@loader", "mocha/mocha.css!"], function(mocha, System){
-	if(System.mocha) {
-		var opts = System.mocha;
+define([
+	"mocha/mocha",
+	"@steal",
+	"@loader",
+	"mocha/mocha.css"
+], function(mocha, steal, loader){
+	if(loader.mocha) {
+		var opts = loader.mocha;
 		mocha.setup(opts);
 	}
 
-	var getOpts;
+	var getOpts,
+		mochaRequire = loader.mochaRequire,
+		global = loader.global;
 
-
-	if(System.mochaRequire) {
-		getOpts = System.import(System.mochaRequire).then(function(mochaConfig) {
+	if(mochaRequire) {
+		getOpts = loader["import"](mochaRequire).then(function(mochaConfig) {
 			return mochaConfig.default || mochaConfig;
 		});
 	}
@@ -18,8 +24,8 @@ define(["mocha/mocha", "@loader", "mocha/mocha.css!"], function(mocha, System){
 	}
 
 	steal.done().then(function() {
-		if (window.Testee && window.Testee.init) {
-			window.Testee.init();
+		if (global.Testee && global.Testee.init) {
+			global.Testee.init();
 		}
 
 		return getOpts;
