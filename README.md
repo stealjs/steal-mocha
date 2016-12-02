@@ -11,8 +11,8 @@ Add the Steal tag to your page
 
 ```html
 <script src="node_modules/steal/steal.js"
-  data-mocha="bdd"
-  data-main="test/test"></script>
+  mocha="bdd"
+  main="test/test"></script>
 ```
 
 This will do the equivalent of
@@ -71,8 +71,8 @@ This is similar to the `--require` option in `mocha.opts`.
 
 ```html
 <script src="node_modules/steal/steal.js"
-  data-mocha-require="test/setup"
-  data-main="test/test"></script>
+  mocha-require="test/setup"
+  main="test/test"></script>
 ```
 
 _The path in `data-mocha-require` is a module name._
