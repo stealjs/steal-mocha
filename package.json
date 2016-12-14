@@ -1,6 +1,6 @@
 {
   "name": "steal-mocha",
-  "version": "1.0.0-pre.3",
+  "version": "1.0.0",
   "description": "A package for Mocha and StealJS",
   "main": "steal-mocha",
   "steal": {
@@ -41,12 +41,12 @@
     "grunt-cli": "^1.2.0",
     "grunt-contrib-copy": "~1.0.0",
     "grunt-contrib-watch": "~1.0.0",
-    "steal": "^1.0.0-rc2",
+    "steal": "^1.0.0",
     "steal-tools": "^1.0.0",
     "testee": "^0.3.0"
   },
   "dependencies": {
     "mocha": "^3.0.2",
-    "steal-css": "^1.0.0-rc.0"
+    "steal-css": "^1.0.0"
   }
 }
