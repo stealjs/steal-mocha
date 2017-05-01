@@ -43,7 +43,7 @@
     "grunt-contrib-watch": "~1.0.0",
     "steal": "^1.0.0",
     "steal-tools": "^1.0.0",
-    "testee": "^0.4.0"
+    "testee": "^0.5.0"
   },
   "dependencies": {
     "mocha": "^3.0.2",
