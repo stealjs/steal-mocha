@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/stealjs/steal-mocha",
   "devDependencies": {
-    "bower": "1.8.0",
+    "bower": "1.8.1",
     "grunt": "~1.0.1",
     "grunt-cli": "^1.2.0",
     "grunt-contrib-copy": "~1.0.0",
