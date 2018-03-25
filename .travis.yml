@@ -1,5 +1,9 @@
 language: node_js
-node_js: 0.10
+node_js:
+  - 4
+  - 6.0
+  - 8.0
+  - node
 script: npm test
 before_install:
   - "export DISPLAY=:99.0"
