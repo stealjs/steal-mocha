@@ -1,6 +1,6 @@
 {
   "name": "steal-mocha",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A package for Mocha and StealJS",
   "main": "steal-mocha",
   "steal": {
