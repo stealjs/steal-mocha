@@ -2,9 +2,8 @@
 @parent steal-mocha.config
 @description
 
-Mocha's runner allows for a [mocha.opts](https://mochajs.org/#mochaopts) file,
-specifying addition options such as `checkLeaks()`. [steal-mocha] does not parsed
-a `mocha.opts` file, however allows the specification of a startup script through **mochaRequire**.
+Mocha's runner allows for a [mocha.opts](https://mochajs.org/#mochaopts) file where you specify additional options such as `checkLeaks()`. [steal-mocha] does not parse
+a `mocha.opts` file but instead allows the specification of a startup script through **mochaRequire**.
 
 This is similar to the `--require` option in `mocha.opts`.
 
