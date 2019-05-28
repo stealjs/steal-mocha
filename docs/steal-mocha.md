@@ -27,7 +27,7 @@ This will do the equivalent of
 mocha.setup("bdd");
 ```
 
-and your tests will automatically be ran.
+and your tests will automatically be run.
 
 ## Writing tests
 
